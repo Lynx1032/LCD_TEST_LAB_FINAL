@@ -12,7 +12,6 @@ import androidx.compose.ui.Modifier
 import com.example.lcdtest.ui.theme.LCDTestTheme
 
 class MainActivity : ComponentActivity() {
-    private val FULLSCREEN_IMAGE_REQUEST_CODE = 1
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContent {
@@ -32,7 +31,7 @@ class MainActivity : ComponentActivity() {
                     val rgbTestButton = findViewById<Button>(R.id.rgb_test_btn)
                     rgbTestButton.setOnClickListener {
                         val intent = Intent(this, RGBTestActivity::class.java)
-                        startActivityForResult(intent, FULLSCREEN_IMAGE_REQUEST_CODE)
+                        startActivity(intent)
                     }
 
                     val touchTestButton = findViewById<Button>(R.id.touch_test_btn)
