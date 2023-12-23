@@ -2,9 +2,7 @@ package com.example.lcdtest
 
 import android.content.Context
 import android.content.Intent
-import android.content.res.Configuration
 import android.os.Bundle
-import android.util.Log
 import android.widget.Button
 import android.widget.ImageButton
 import androidx.activity.ComponentActivity

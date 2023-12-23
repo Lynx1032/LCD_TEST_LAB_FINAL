@@ -12,4 +12,6 @@
     <string name="settings_menu_bar_name">Settings</string>
     <string name="language_spinner_label">Language</string>
     <string name="credit_info">Final Project: Mobile Programming (Practice)\nLCD Screen Test App\n\nCourse Lecturer: MSc. Nguyễn Thái Công Nghĩa\n\nTeam Member:\nHồ Hoàng Nghiệp - 20200277\nNguyễn Tiến Trung - 20200382</string>
+    <string name="touch_input_test_label">How many number of your finger? Touch the zone below!</string>
+    <string name="touch_input_action_label">Touch the screen!!!</string>
 </resources>
