@@ -1,6 +1,15 @@
 <resources>
+    <string-array name="languages_array">
+        <item>Select Language</item>
+        <item>English</item>
+        <item>Vietnamese</item>
+    </string-array>
+    
     <string name="app_name">LCD Test</string>
-    <string name="sys_info_btn_label">Screen Info</string>
+    <string name="sys_info_btn_label">Display Info</string>
     <string name="rgb_test_btn_label">RGB Test</string>
     <string name="touch_test_btn_label">Touch Input Test</string>
+    <string name="settings_menu_bar_name">Settings</string>
+    <string name="language_spinner_label">Language</string>
+    <string name="credit_info">Final Project: Mobile Programming (Practice)\nLCD Screen Test App\n\nCourse Lecturer: MSc. Nguyễn Thái Công Nghĩa\n\nTeam Member:\nHồ Hoàng Nghiệp - 20200277\nNguyễn Tiến Trung - 20200382</string>
 </resources>

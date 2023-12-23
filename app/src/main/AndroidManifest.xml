@@ -35,6 +35,10 @@
             android:name=".TouchTestActivity"
             android:theme="@style/Theme.LCDTest">
         </activity>
+        <activity
+            android:name=".SettingsActivity"
+            android:theme="@style/Theme.LCDTest">
+        </activity>
     </application>
 
 </manifest>
