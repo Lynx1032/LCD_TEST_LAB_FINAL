@@ -82,7 +82,7 @@ class RGBTestActivity : ComponentActivity() {
                 controller.hide(WindowInsets.Type.statusBars())
                 controller.systemBarsBehavior =
                     WindowInsetsController.BEHAVIOR_SHOW_TRANSIENT_BARS_BY_SWIPE
-                controller.hide(WindowInsets.Type.displayCutout())
+                controller.hide(WindowInsets.Type.navigationBars())
             }
         } else {
             window.decorView.systemUiVisibility = (
