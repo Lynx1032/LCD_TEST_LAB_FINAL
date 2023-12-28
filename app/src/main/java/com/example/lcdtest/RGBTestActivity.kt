@@ -28,7 +28,7 @@ class RGBTestActivity : ComponentActivity() {
         super.onCreate(savedInstanceState)
         hideSystemUI()
         adjustLayoutForCutout()
-        setMaxScreenBrightness()
+        //setMaxScreenBrightness()
         setContent {
             LCDTestTheme {
                 Surface(
