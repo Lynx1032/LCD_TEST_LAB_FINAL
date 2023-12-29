@@ -3,10 +3,9 @@ package com.example.lcdtest
 import android.os.Build
 import android.os.Bundle
 import android.view.View
-import android.view.WindowInsets
-import android.view.WindowInsetsController
 import android.view.WindowManager
 import android.widget.ImageView
+import android.widget.Toast
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -21,7 +20,8 @@ class RGBTestActivity : ComponentActivity() {
     private val imageArray = arrayOf(
         R.drawable.red_solid, R.drawable.green_solid, R.drawable.blue_solid,
         R.drawable.white_solid, R.drawable.black_solid,
-        R.drawable.red_gradient, R.drawable.green_gradient, R.drawable.blue_gradient, R.drawable.monochrome_gradient
+        R.drawable.red_gradient, R.drawable.green_gradient, R.drawable.blue_gradient, R.drawable.monochrome_gradient,
+        R.drawable.smpte_color
     )
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -35,6 +35,13 @@ class RGBTestActivity : ComponentActivity() {
                     modifier = Modifier.fillMaxSize(),
                     color = MaterialTheme.colorScheme.background
                 ) {
+
+                    Toast.makeText(
+                        baseContext,
+                        this.getString(R.string.toast_rgb_guide),
+                        Toast.LENGTH_SHORT,
+                    ).show()
+
                     setContentView(R.layout.rgb_test)
                     imageView = findViewById(R.id.img_viewer)
                     imageView.setOnClickListener {

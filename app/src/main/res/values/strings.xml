@@ -7,11 +7,13 @@
     
     <string name="app_name">LCD Test</string>
     <string name="sys_info_btn_label">Display Info</string>
-    <string name="rgb_test_btn_label">RGB Test</string>
+    <string name="rgb_test_btn_label">Color Test</string>
     <string name="touch_test_btn_label">Touch Input Test</string>
     <string name="settings_menu_bar_name">Settings</string>
     <string name="language_spinner_label">Language</string>
     <string name="credit_info">Final Project: Mobile Programming (Practice)\nLCD Screen Test App\n\nCourse Lecturer: MSc. Nguyễn Thái Công Nghĩa\n\nTeam Member:\nHồ Hoàng Nghiệp - 20200277\nNguyễn Tiến Trung - 20200382</string>
-    <string name="touch_input_test_label">How many number of your finger? Touch the zone below!</string>
-    <string name="touch_input_action_label">Touch the screen!!!</string>
+    <string name="toast_touch_input_guide">Touch the screen by using as many fingers as you can</string>
+    <string name="toast_touch_input_guide_2">Tap all the squares on screen</string>
+    <string name="toast_touch_input_guide_3">Let\'s have some fun! You have 60 seconds to draw</string>
+    <string name="toast_rgb_guide">Tap to see the next picture</string>
 </resources>

@@ -6,7 +6,6 @@ import android.os.Build
 import android.os.Bundle
 import android.os.CountDownTimer
 import android.view.LayoutInflater
-import android.view.MotionEvent
 import android.view.View
 import android.view.WindowManager
 import android.widget.TextView
@@ -20,9 +19,8 @@ import androidx.compose.ui.Modifier
 import com.example.lcdtest.ui.theme.LCDTestTheme
 import java.util.Locale
 
-class TouchTestActivity : ComponentActivity() {
+class TouchTest3Activity : ComponentActivity() {
 
-    private lateinit var fingerCountTextView: TextView
     private lateinit var countDownClock: TextView
     private lateinit var countDownTimer: CountDownTimer
 
@@ -54,46 +52,27 @@ class TouchTestActivity : ComponentActivity() {
                 ) {
                     Toast.makeText(
                         baseContext,
-                        this.getString(R.string.toast_touch_input_guide),
+                        this.getString(R.string.toast_touch_input_guide_3),
                         Toast.LENGTH_SHORT,
                     ).show()
 
                     val updatedContext = context.createConfigurationContext(configuration)
                     val rootView = LayoutInflater.from(updatedContext)
-                        .inflate(R.layout.touch_test, null)
+                        .inflate(R.layout.touch_test_3, null)
 
-                    fingerCountTextView = rootView.findViewById(R.id.touch_input_num_indicator)
                     countDownClock = rootView.findViewById(R.id.countdown_text)
 
-                    countDownTimer = object : CountDownTimer(30_000, 1_000) {
+                    countDownTimer = object : CountDownTimer(60_000, 1_000) {
                         override fun onTick(millisUntilFinished: Long) {
                             val secondsRemaining = millisUntilFinished / 1_000
                             countDownClock.text = secondsRemaining.toString()
                         }
 
                         override fun onFinish() {
-                            goToNextTest()
+                            returnToMenu()
                         }
                     }
                     countDownTimer.start()
-
-                    var fingerCount = 0
-                    val touchTestLayout = rootView.findViewById<View>(R.id.touch_input_num_indicator)
-                    touchTestLayout.setOnTouchListener { _, event ->
-                        when (event.actionMasked) {
-                            MotionEvent.ACTION_DOWN, MotionEvent.ACTION_POINTER_DOWN -> {
-                                // Handle touch events as needed
-                                fingerCount++
-                                fingerCountTextView.text = fingerCount.toString()
-                            }
-                            MotionEvent.ACTION_UP, MotionEvent.ACTION_POINTER_UP -> {
-                                // Handle touch events as needed
-                                fingerCount--
-                                fingerCountTextView.text = fingerCount.toString()
-                            }
-                        }
-                        true
-                    }
 
                     setContentView(rootView)
                 }
@@ -124,8 +103,8 @@ class TouchTestActivity : ComponentActivity() {
                 )
     }
 
-    private fun goToNextTest() {
-        val intent = Intent(this, TouchTest3Activity::class.java)
+    private fun returnToMenu() {
+        val intent = Intent(this, MainActivity::class.java)
         startActivity(intent)
         finish()
     }

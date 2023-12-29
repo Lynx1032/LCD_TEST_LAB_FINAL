@@ -61,7 +61,7 @@ class MainActivity : ComponentActivity() {
 
                     val touchTestButton = findViewById<Button>(R.id.touch_test_btn)
                     touchTestButton.setOnClickListener {
-                        val intent = Intent(this, TouchTestActivity::class.java)
+                        val intent = Intent(this, TouchTest2Activity::class.java)
                         startActivity(intent)
                     }
                 }

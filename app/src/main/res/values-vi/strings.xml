@@ -7,6 +7,8 @@
     <string name="settings_menu_bar_name">Cài đặt</string>
     <string name="language_spinner_label">Ngôn ngữ</string>
     <string name="credit_info">Đồ án cuối kỳ: TH Lập trình di động\nỨng dụng kiểm tra màn hình LCD\n\nGiảng viên: ThS Nguyễn Thái Công Nghĩa\n\nThành viên nhóm:\nHồ Hoàng Nghiệp - 20200277\nNguyễn Tiến Trung - 20200382</string>
-    <string name="touch_input_test_label">Bạn có bao nhiêu ngón tay? Chạm vào khu vực bên dưới!</string>
-    <string name="touch_input_action_label">Chạm vào màn hình!!!</string>
+    <string name="toast_touch_input_guide">Chạm càng nhiều ngón càng tốt vào màn hình</string>
+    <string name="toast_touch_input_guide_2">Chạm vào hết các ô vuông trên màn hình</string>
+    <string name="toast_touch_input_guide_3">Quẩy lên nào! Bạn có 60 giây để vẽ</string>
+    <string name="toast_rgb_guide">Chạm để xem hình kế tiếp</string>
 </resources>
