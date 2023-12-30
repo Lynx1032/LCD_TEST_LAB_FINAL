@@ -17,7 +17,7 @@
     <string name="toast_touch_input_guide_3">Let\'s have some fun! You have 60 seconds to draw</string>
     <string name="toast_rgb_guide">Tap to see the next picture</string>
     <string name="get_display_metrics">Get display metrics</string>
-    <string name="screen_size">Screen Size:</string>
-    <string name="screen_height">Screen Height:</string>
-    <string name="screen_width">Screen Width:</string>
+    <string name="screen_size">Screen Size: </string>
+    <string name="screen_height">Screen Height: </string>
+    <string name="screen_width">Screen Width: </string>
 </resources>

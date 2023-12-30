@@ -12,7 +12,7 @@
     <string name="toast_touch_input_guide_3">Quẩy lên nào! Bạn có 60 giây để vẽ</string>
     <string name="toast_rgb_guide">Chạm để xem hình kế tiếp</string>
     <string name="get_display_metrics">Lấy kích thước màn hình</string>
-    <string name="screen_size">Size màn hình:</string>
-    <string name="screen_height">Chiều cao màn hình:</string>
-    <string name="screen_width">Chiều rộng màn hình:</string>
+    <string name="screen_size">"Size màn hình: "</string>
+    <string name="screen_height">"Chiều cao màn hình: "</string>
+    <string name="screen_width">"Chiều rộng màn hình: "</string>
 </resources>

@@ -48,6 +48,12 @@ class SysInfoActivity : ComponentActivity() {
 
                     val metricsButton: Button = findViewById(R.id.btn_dis_Mertric)
                     metricsButton.setOnClickListener{
+
+                        // Clear previous text to prevent the same button is pressed accidentally
+                        widthTextView.text = this.getString(R.string.screen_width)
+                        heightTextView.text = this.getString(R.string.screen_height)
+                        sizeTextView.text = this.getString(R.string.screen_size)
+
                         widthTextView.text = widthTextView.text.toString().plus(DisplayMetricsHelper.getScreenWidth(this).toString()).plus(" Pixel")
                         heightTextView.text = heightTextView.text.toString().plus(DisplayMetricsHelper.getScreenHeight(this).toString()).plus(" Pixel")
                         sizeTextView.text = sizeTextView.text.toString().plus(DisplayMetricsHelper.getScreenSize(this).toString()).plus(" Inches")
