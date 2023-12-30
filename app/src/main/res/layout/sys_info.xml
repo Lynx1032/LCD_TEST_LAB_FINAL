@@ -17,5 +17,51 @@
             android:text="@string/sys_info_btn_label"
             android:textSize="34sp"
             android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="200dp"
+            android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_scr_Width"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/screen_width"
+                android:textSize="20dp"
+                />
+
+            <TextView
+                android:id="@+id/tv_scr_Height"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/screen_height"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_scr_Size"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/screen_size"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
+
+            <Button
+                android:id="@+id/btn_dis_Mertric"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:text="@string/get_display_metrics"/>
+        </LinearLayout>
+
+
     </LinearLayout>
 </LinearLayout>

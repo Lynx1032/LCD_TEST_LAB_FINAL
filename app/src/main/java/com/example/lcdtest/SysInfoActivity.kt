@@ -2,6 +2,8 @@ package com.example.lcdtest
 
 import android.content.Context
 import android.os.Bundle
+import android.widget.Button
+import android.widget.TextView
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.layout.fillMaxSize
@@ -12,11 +14,14 @@ import com.example.lcdtest.ui.theme.LCDTestTheme
 import java.util.Locale
 
 class SysInfoActivity : ComponentActivity() {
+    lateinit var widthTextView: TextView
+    lateinit var heightTextView: TextView
+    lateinit var sizeTextView: TextView
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         val sharedPreferences = getSharedPreferences("MyAppPrefs", Context.MODE_PRIVATE)
         val selectedLanguage = sharedPreferences.getString("selectedLanguage", "en_us")
-
         val locale = Locale(selectedLanguage)
         Locale.setDefault(locale)
 
@@ -36,6 +41,17 @@ class SysInfoActivity : ComponentActivity() {
                 ) {
                     val updatedContext = context.createConfigurationContext(configuration)
                     setContentView(R.layout.sys_info)
+
+                    widthTextView = findViewById(R.id.tv_scr_Width)
+                    heightTextView = findViewById(R.id.tv_scr_Height)
+                    sizeTextView = findViewById(R.id.tv_scr_Size)
+
+                    val metricsButton: Button = findViewById(R.id.btn_dis_Mertric)
+                    metricsButton.setOnClickListener{
+                        widthTextView.text = widthTextView.text.toString().plus(DisplayMetricsHelper.getScreenWidth(this).toString()).plus(" Pixel")
+                        heightTextView.text = heightTextView.text.toString().plus(DisplayMetricsHelper.getScreenHeight(this).toString()).plus(" Pixel")
+                        sizeTextView.text = sizeTextView.text.toString().plus(DisplayMetricsHelper.getScreenSize(this).toString()).plus(" Inches")
+                    }
                 }
             }
         }
