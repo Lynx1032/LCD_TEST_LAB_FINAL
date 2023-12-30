@@ -119,7 +119,7 @@
                 android:textSize="20dp"
                 android:textStyle="bold"
                 android:background="@drawable/round_background"
-                android:text="@string/get_display_metrics"/>
+                android:text="@string/get_sys_info"/>
         </LinearLayout>
 
 

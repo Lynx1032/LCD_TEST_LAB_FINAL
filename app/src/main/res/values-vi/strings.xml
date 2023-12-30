@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">LCD Test</string>
-    <string name="sys_info_btn_label">Thông tin màn hình</string>
+    <string name="sys_info_btn_label">Thông tin hệ thống</string>
     <string name="rgb_test_btn_label">Kiểm tra màu sắc</string>
     <string name="touch_test_btn_label">Kiểm tra cảm ứng</string>
     <string name="settings_menu_bar_name">Cài đặt</string>
     <string name="language_spinner_label">Ngôn ngữ</string>
     <string name="credit_info">Đồ án cuối kỳ: TH Lập trình di động\nỨng dụng kiểm tra màn hình LCD\n\nGiảng viên: ThS Nguyễn Thái Công Nghĩa\n\nThành viên nhóm:\nHồ Hoàng Nghiệp - 20200277\nNguyễn Tiến Trung - 20200382</string>
     <string name="toast_touch_input_guide">Chạm càng nhiều ngón càng tốt vào màn hình</string>
-    <string name="toast_touch_input_guide_2">Chạm vào hết các ô vuông trên màn hình</string>
+    <string name="toast_touch_input_guide_2">Chạm vào tất cả các ô vuông trên màn hình</string>
     <string name="toast_touch_input_guide_3">Quẩy lên nào! Bạn có 60 giây để vẽ</string>
     <string name="toast_rgb_guide">Chạm để xem hình kế tiếp</string>
-    <string name="get_display_metrics">Lấy kích thước màn hình</string>
+    <string name="get_sys_info">Lấy thông số hệ thống</string>
     <string name="screen_size">"Size màn hình: "</string>
     <string name="screen_height">"Chiều cao màn hình: "</string>
     <string name="screen_width">"Chiều rộng màn hình: "</string>
-    <string name="device_name">Tên thiết bị:</string>
-    <string name="read_only_memory">Bộ nhớ chỉ đọc:</string>
-    <string name="memory">Bộ nhớ:</string>
-    <string name="model">Kiểu máy:</string>
-    <string name="manufacture">Nhà sản xuất:</string>
+    <string name="device_name">"Tên bo mạch chính: "</string>
+    <string name="read_only_memory">"Bộ nhớ trong còn trống: "</string>
+    <string name="memory">"RAM hệ thống: "</string>
+    <string name="model">"Kiểu máy: "</string>
+    <string name="manufacture">"Nhà sản xuất: "</string>
 </resources>

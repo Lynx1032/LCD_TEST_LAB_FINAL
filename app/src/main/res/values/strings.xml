@@ -6,7 +6,7 @@
     </string-array>
     
     <string name="app_name">LCD Test</string>
-    <string name="sys_info_btn_label">Display Info</string>
+    <string name="sys_info_btn_label">System Info</string>
     <string name="rgb_test_btn_label">Color Test</string>
     <string name="touch_test_btn_label">Touch Input Test</string>
     <string name="settings_menu_bar_name">Settings</string>
@@ -16,13 +16,13 @@
     <string name="toast_touch_input_guide_2">Tap all the squares on screen</string>
     <string name="toast_touch_input_guide_3">Let\'s have some fun! You have 60 seconds to draw</string>
     <string name="toast_rgb_guide">Tap to see the next picture</string>
-    <string name="get_display_metrics">Get display metrics</string>
-    <string name="screen_size">Screen Size: </string>
-    <string name="screen_height">Screen Height: </string>
-    <string name="screen_width">Screen Width: </string>
-    <string name="device_name">Device name:</string>
-    <string name="read_only_memory">Read-Only Memory:</string>
-    <string name="memory">Memory:</string>
-    <string name="model">Model:</string>
-    <string name="manufacture">Manufacturer:</string>
+    <string name="get_sys_info">Get system info</string>
+    <string name="screen_size">"Screen Size: "</string>
+    <string name="screen_height">"Screen Height: "</string>
+    <string name="screen_width">"Screen Width: "</string>
+    <string name="device_name">"Board name: "</string>
+    <string name="read_only_memory">"Available Internal Storage: "</string>
+    <string name="memory">"System Memory: "</string>
+    <string name="model">"Model: "</string>
+    <string name="manufacture">"Manufacturer: "</string>
 </resources>
