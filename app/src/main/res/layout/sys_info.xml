@@ -3,7 +3,8 @@
     android:id="@+id/sys_info_menu_bar_name"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@drawable/img_touch2">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -15,6 +16,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/sys_info_btn_label"
+            android:textColor="@color/white"
+            android:layout_marginLeft="10dp"
             android:textSize="34sp"
             android:textStyle="bold" />
 
@@ -22,14 +25,65 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical"
-            android:layout_marginTop="200dp"
+            android:layout_marginTop="150dp"
             android:layout_gravity="center">
+
+            <TextView
+                android:id="@+id/tv_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/device_name"
+                android:textColor="@color/white"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/tv_manufac"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/manufacture"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_model"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/model"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_memory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/memory"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
+
+            <TextView
+                android:id="@+id/tv_rom"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:text="@string/read_only_memory"
+                android:textColor="@color/white"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"/>
 
             <TextView
                 android:id="@+id/tv_scr_Width"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:textColor="@color/white"
                 android:text="@string/screen_width"
                 android:textSize="20dp"
                 />
@@ -40,6 +94,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/screen_height"
+                android:textColor="@color/white"
                 android:layout_marginTop="10dp"
                 android:textSize="20dp"/>
 
@@ -49,6 +104,7 @@
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 android:text="@string/screen_size"
+                android:textColor="@color/white"
                 android:layout_marginTop="10dp"
                 android:textSize="20dp"/>
 
@@ -56,9 +112,13 @@
                 android:id="@+id/btn_dis_Mertric"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:layout_marginTop="20dp"
+                android:layout_marginTop="80dp"
                 android:layout_marginLeft="20dp"
                 android:layout_marginRight="20dp"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold"
+                android:background="@drawable/round_background"
                 android:text="@string/get_display_metrics"/>
         </LinearLayout>
 

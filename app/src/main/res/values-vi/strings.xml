@@ -15,4 +15,9 @@
     <string name="screen_size">"Size màn hình: "</string>
     <string name="screen_height">"Chiều cao màn hình: "</string>
     <string name="screen_width">"Chiều rộng màn hình: "</string>
+    <string name="device_name">Tên thiết bị:</string>
+    <string name="read_only_memory">Bộ nhớ chỉ đọc:</string>
+    <string name="memory">Bộ nhớ:</string>
+    <string name="model">Kiểu máy:</string>
+    <string name="manufacture">Nhà sản xuất:</string>
 </resources>

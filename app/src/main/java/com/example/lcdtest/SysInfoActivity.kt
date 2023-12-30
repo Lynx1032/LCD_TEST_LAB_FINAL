@@ -17,6 +17,11 @@ class SysInfoActivity : ComponentActivity() {
     lateinit var widthTextView: TextView
     lateinit var heightTextView: TextView
     lateinit var sizeTextView: TextView
+    lateinit var nameTextView: TextView
+    lateinit var manufacTextView: TextView
+    lateinit var modelTextView: TextView
+    lateinit var memoryTextView: TextView
+    lateinit var romTextView: TextView
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -45,6 +50,12 @@ class SysInfoActivity : ComponentActivity() {
                     widthTextView = findViewById(R.id.tv_scr_Width)
                     heightTextView = findViewById(R.id.tv_scr_Height)
                     sizeTextView = findViewById(R.id.tv_scr_Size)
+                    nameTextView = findViewById(R.id.tv_name)
+                    manufacTextView = findViewById(R.id.tv_manufac)
+                    modelTextView = findViewById(R.id.tv_model)
+                    memoryTextView = findViewById(R.id.tv_memory)
+                    romTextView = findViewById(R.id.tv_rom)
+
 
                     val metricsButton: Button = findViewById(R.id.btn_dis_Mertric)
                     metricsButton.setOnClickListener{
@@ -53,10 +64,23 @@ class SysInfoActivity : ComponentActivity() {
                         widthTextView.text = this.getString(R.string.screen_width)
                         heightTextView.text = this.getString(R.string.screen_height)
                         sizeTextView.text = this.getString(R.string.screen_size)
+                        nameTextView.text = this.getString(R.string.device_name)
+                        manufacTextView.text = this.getString(R.string.manufacture)
+                        modelTextView.text = this.getString(R.string.model)
+                        memoryTextView.text = this.getString(R.string.memory)
+                        romTextView.text = this.getString((R.string.read_only_memory))
+
 
                         widthTextView.text = widthTextView.text.toString().plus(DisplayMetricsHelper.getScreenWidth(this).toString()).plus(" Pixel")
                         heightTextView.text = heightTextView.text.toString().plus(DisplayMetricsHelper.getScreenHeight(this).toString()).plus(" Pixel")
                         sizeTextView.text = sizeTextView.text.toString().plus(DisplayMetricsHelper.getScreenSize(this).toString()).plus(" Inches")
+                        nameTextView.text = nameTextView.text.toString().plus(DisplayMetricsHelper.getDeviceInfo().first)
+                        manufacTextView.text = manufacTextView.text.toString().plus(DisplayMetricsHelper.getDeviceInfo().second)
+                        modelTextView.text = modelTextView.text.toString().plus(DisplayMetricsHelper.getDeviceInfo().third)
+                        val totalRAM = DisplayMetricsHelper.getTotalRAM(context)
+                        memoryTextView.text = memoryTextView.text.toString().plus(DisplayMetricsHelper.formatSize(totalRAM))
+                        val totalROM = DisplayMetricsHelper.getExternalStorageTotal()
+                        romTextView.text = romTextView.text.toString().plus(DisplayMetricsHelper.formatSize(totalROM))
                     }
                 }
             }

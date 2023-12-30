@@ -20,4 +20,9 @@
     <string name="screen_size">Screen Size: </string>
     <string name="screen_height">Screen Height: </string>
     <string name="screen_width">Screen Width: </string>
+    <string name="device_name">Device name:</string>
+    <string name="read_only_memory">Read-Only Memory:</string>
+    <string name="memory">Memory:</string>
+    <string name="model">Model:</string>
+    <string name="manufacture">Manufacturer:</string>
 </resources>
