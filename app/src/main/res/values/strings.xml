@@ -5,7 +5,7 @@
         <item>Vietnamese</item>
     </string-array>
     
-    <string name="app_name">LCD Test</string>
+    <string name="app_name">Screen Test App</string>
     <string name="sys_info_btn_label">System Info</string>
     <string name="rgb_test_btn_label">Color Test</string>
     <string name="touch_test_btn_label">Touch Input Test</string>

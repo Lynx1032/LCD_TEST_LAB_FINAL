@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">LCD Test</string>
+    <string name="app_name">Ứng dụng kiểm tra màn hình</string>
     <string name="sys_info_btn_label">Thông tin hệ thống</string>
     <string name="rgb_test_btn_label">Kiểm tra màu sắc</string>
     <string name="touch_test_btn_label">Kiểm tra cảm ứng</string>
